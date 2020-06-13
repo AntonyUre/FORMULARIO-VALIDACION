@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+}
+.container{
+    height: 100vh;
+    background-image: url(./back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+.contacto{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+}
+.contacto .title{
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    padding-top: 37px;
+}
+.form{
+    margin-top:27px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap:2em;
+}
+input:focus:invalid{
+    /* border: 2px solid red; */
+    box-shadow:0 0 10px 10px red;
+}
+input:focus:valid {
+    /* border: 2px solid green; */
+    box-shadow:0 0 10px 10px aqua;
+}
+.sex:focus:invalid{
+    /* border: 2px solid red; */
+    box-shadow:0 0 10px 10px red;
+}
+.sex:focus:valid {
+    /* border: 2px solid green; */
+    box-shadow:0 0 10px 10px aqua;
+}
+textarea:focus:invalid {
+    /* border: 2px solid red; */
+    box-shadow:0 0 10px 10px red;
+}
+textarea:focus:valid {
+    /* border: 2px solid green; */
+    box-shadow:0 0 10px 10px aqua;
+}
+/* ESTILOS DE INPUTS */
+.name, .addres, .email, .edad, .sex, .dni{
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* input:hover, select:hover, textarea:hover{
+    box-shadow:0 0 10px 10px aqua;
+} */
+.message{
+    width: 100%;
+    height: 115px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    grid-column: span 2;
+    color: darkgray;
+}
+.check{
+    color: #fff;
+    grid-column: span 2;
+    margin: 0 auto;
+}
+.check input{
+    margin: 0 5px;
+}
+.check label a{
+    color: #fff;
+    font-weight: bold;
+}
+.buttons{
+    margin: 0 auto;
+    grid-column: span 2;
+}
+.button{
+    width: 167px;
+    height: 56px;
+    text-align: center;
+    grid-column: span 2;
+    font-size: 18px;
+    color: #fff;
+    background: #1e319b;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    margin:0 10px ;
+}
+.button:hover{
+    box-shadow:0 0 10px 10px aqua;
+}
